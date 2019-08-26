@@ -1,0 +1,194 @@
+/* Variables */
+:root {
+  --primary-color: rgba(8, 78, 255, 0.5);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(42, 66, 128, 0.9);
+  --menu-speed: 0.75s;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+/* Utilities */
+.l-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.m-heading {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+}
+
+iframe {
+  height: 20rem;
+  width: 20rem;
+}
+
+/* Desktop Navbar */
+#desktop-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: var(--overlay-color);
+  top: 0;
+  justify-content: center;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#desktop-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#desktop-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  transition: all 300ms ease-in-out;
+}
+
+#desktop-nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Showcase */
+#showcase {
+  background: var(--primary-color);
+  background-attachment: fixed;
+  color: #f4f4f4;
+  height: 100vh;
+  position: relative;
+}
+
+#showcase::before {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1439923274069-a6f070db0c99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=885&q=80")
+    center center/cover no-repeat;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+#showcase h1 {
+  font-weight: 900;
+}
+
+#showcase h2 {
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+#showcase p {
+  margin-top: 0.3rem;
+}
+
+#showcase .italic {
+  font-style: italic;
+}
+
+/* Music */
+#music {
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#music .albums {
+  display: flex;
+  flex-direction: row;
+}
+
+#music .albums .album-frame {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* follow */
+
+#follow {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+#follow .icon-div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#follow .icon-div div {
+  flex: 1;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+#follow .icon-div div .fa-soundcloud {
+  color: #ff7700;
+}
+
+#follow .icon-div div .fa-instagram {
+  color: #fff;
+}
+
+#follow .icon-div div .fa-twitter {
+  color: #00aced;
+}
+#follow .icon-div div a {
+  transition: opacity 200ms ease-in-out;
+}
+
+#follow .icon-div div a:hover {
+  opacity: 0.7;
+}
+
+/* Footer */
+footer {
+  color: #f4f4f4;
+  font-size: 0.5rem;
+  width: 100%;
+  text-align: center;
+}

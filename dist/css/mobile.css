@@ -1,0 +1,16 @@
+.menu-wrap {
+  display: block;
+}
+
+#desktop-nav {
+  display: none;
+}
+
+#music .albums {
+  display: flex;
+  flex-direction: column;
+}
+
+.iframe {
+  max-width: 300px;
+}
