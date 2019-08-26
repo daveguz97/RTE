@@ -130,6 +130,7 @@ iframe {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 3rem 0;
 }
 
 #music .albums {
@@ -152,11 +153,14 @@ iframe {
   align-items: center;
   text-align: center;
   color: #f4f4f4;
+  padding: 3rem 0;
 }
 
 #follow .icon-div {
+  margin-top: 0.75rem;
+  padding: 1rem;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -191,4 +195,5 @@ footer {
   font-size: 0.5rem;
   width: 100%;
   text-align: center;
+  margin-bottom: 1rem;
 }
